@@ -5,7 +5,7 @@
    - name: user creation
      user:
       name: Hari
-      password: intelliqiit
+      password: intelliqit
       uid: 1890
       home: /home/ubuntu/Hari
       comment: "A normal user"
