@@ -1,0 +1,20 @@
+---
+- name: create multplesoftware 
+  hosts: all
+  tasks:
+    - name: multple user
+      user: 
+       name: "{{item.b}}"
+       password: "{{item.b}}"
+       home: "{{item.c}}"
+      with_items: 
+        - {a: rajesh,b: intelliqit,c: /home/ubuntu/rajesh}
+        - {a: rani,b: intelliqit,c: /home/rani}
+    - name: copy file into the user home dir
+      copy:
+       src: "{{item.a}}"
+       dest: "{{item.b}}"
+      with_items: 
+       - {a: /etc/password,b: /home/ubuntu/rajesh}
+       - {a: /etc/group,b: /home/rani}
+       
