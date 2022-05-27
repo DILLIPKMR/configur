@@ -14,7 +14,7 @@
    - name: restart
      service:
       name: apache2
-      state: restart
+      state: restarted
    - name: chek the url response of apache2 on server1
      uri:
       url: http//172.31.34.104
