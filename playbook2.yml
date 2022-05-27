@@ -9,9 +9,8 @@
       update_cache: yes
    - name: Edit the index.html file
      copy:
-      name: 
-       content: "inteliqit"
-       dest: /var/www/html/index.html
+      content: "inteliqit"
+      dest: /var/www/html/index.html
    - name: restart
      service:
       name: apache2
