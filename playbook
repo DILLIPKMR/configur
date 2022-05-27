@@ -2,7 +2,7 @@
 - name: create user
   hosts: all
   tasks:
-   - name: user create
+   - name: user creation
      user:
       name: Hari
       password: intelliqiit
@@ -11,4 +11,3 @@
       comment: "A normal user"
       shell: /bin/bash
 
-      
