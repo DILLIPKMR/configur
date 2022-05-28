@@ -13,7 +13,7 @@
        name: usha
        password: intelliqit
       tags: create install
-    - name: copy/etc/passwd file
+    - name: copy file
       copy: 
        src: /etc/password
        dest: /tmp
