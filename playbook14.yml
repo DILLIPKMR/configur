@@ -8,9 +8,9 @@
        state: present
        update_cache: "{{item.b}}"
       with_items: 
-       - {a: openjdk-8-jdk,b: present,c: yes}
-       - {a: maven,b: present,c: no}
-       - {a: git,b: present,c: no}
+       - {a: openjdk-8-jdk,b: absent,c: yes}
+       - {a: maven,b: absent,c: no}
+       - {a: git,b: absent,c: no}
     - name: download jenkins.war
       get_url:
        url: https://get.jenkins.io/war-stable/2.332.3/jenkins.war
