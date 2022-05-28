@@ -2,7 +2,7 @@
 - name: create multplesoftware 
   hosts: all
   tasks:
-    - name: multple user
+    - name: multple user creation
       user: 
        name: "{{item.b}}"
        password: "{{item.b}}"
