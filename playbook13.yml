@@ -1,0 +1,20 @@
+---
+- name: implemeting tag
+  hosts: all
+  tasks:
+    - name: install tree
+      apt:
+       name: tree
+       state: present
+       update_cache: yes
+      tags: tree_installtion
+    - name: create user
+      user:
+       name: usha
+       password: intelliqit
+      tags: user_creation
+    - name: copy/etc/passwd file
+      copy: 
+       src: /etc/password
+       dest: /tmp
+       
