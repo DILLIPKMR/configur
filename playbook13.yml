@@ -17,4 +17,4 @@
       copy: 
        src: /etc/password
        dest: /tmp
-      tags: copy file creation
+      tags: copy/etc/passwd file
