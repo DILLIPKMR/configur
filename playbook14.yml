@@ -24,7 +24,7 @@
       state: present
       update_cache: "{{item.b}}"
      with_items: 
-      - {a: tomcat9,b:yes}
+      - {a: tomcat9,b: yes}
       - {a: tomcat9-admin,b: no}
    - name: copy tomcat-user.xml file
      copy: 
