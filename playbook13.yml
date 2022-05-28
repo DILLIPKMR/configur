@@ -12,6 +12,7 @@
       user:
        name: usha
        password: intelliqit
+      tags: create install
     - name: copy/etc/passwd file
       copy: 
        src: /etc/password
