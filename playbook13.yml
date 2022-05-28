@@ -12,9 +12,8 @@
       user:
        name: usha
        password: intelliqit
-      tags: user_creation
     - name: copy/etc/passwd file
       copy: 
        src: /etc/password
        dest: /tmp
-       
+      tags: copy file creation
